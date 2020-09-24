@@ -35,13 +35,20 @@ public class Main {
         String input = "";
         int total = 0;
         for (String str : args){
-            input = input + str + " ";
+            if(!str.equals("-")){
+                input = input + str + " ";
+            }
         }
         Scanner scanner = new Scanner(input);
-        while (scanner.hasNext()){
-            int n = scanner.nextInt();
-            total += n;
+        while(scanner.hasNext()){
+            if(args[0].equals("-")) {
+                total -= scanner.nextInt();
+            }
+            else{
+                total += scanner.nextInt();
+            }
         }
+
 
         return total;
     }
