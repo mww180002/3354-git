@@ -1,0 +1,6 @@
+(a) There are now 7 commits in the repository history.
+(b) The file .gitignore was added Jan 24, 2017.
+(c) Git log and git status operate on different workspaces. The log command operates on the project history, showing all previous commit data. The status command operates on the working directory and shows the user data about commits in progress and changed files that have not been added to the commit.
+(d) An untracked file is a new file that has been created in the working directory but has not yet been added to the repository. An unstaged file is a file that already exists in the repository but has been changed without adding it to the staging area.
+(e) Git checkout is used to switch the branch of the repository. Git reset is used to undo local changes made to a repository.
+(f) Git pull will update the current branch of the repository with the changes on the remote server and attempt to integrate changes by merging files with the same name. If changes occur on the same lines of a file in both the server and local repository a merge conflict will result that will need to be resolved before continuing. 
